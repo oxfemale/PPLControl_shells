@@ -35,12 +35,12 @@ void SoftExit(HANDLE hPort, int exitCode);
 VOID PrintUsage(LPWSTR Prog);
 VOID PrintUsage(LPWSTR Prog)
 {
-    wprintf(SKW(L"ppexec.exe info"));
-    wprintf(SKW(L"ppexec.exe list"));
-    wprintf(SKW(L"ppexec.exe get <PID>"));
+    wprintf(SKW(L"ppexec.exe info\n"));
+    wprintf(SKW(L"ppexec.exe list\n"));
+    wprintf(SKW(L"ppexec.exe get <PID>\n"));
     wprintf(SKW(L"ppexec.exe set <PID> <PP|PPL> <TYPE>\n"));
     wprintf(SKW(L"ppexec.exe protect <PID> <PP|PPL> <TYPE>\n"));
-    wprintf(SKW(L"ppexec.exe unprotect <PID>"));
+    wprintf(SKW(L"ppexec.exe unprotect <PID>\n"));
     wprintf(SKW(L"Signer TYPEs:\n  Authenticode, CodeGen, Antimalware, Lsa, Windows, WinTcb, WinSystem\n"));
     wprintf(SKW(L"\n"));
     wprintf(SKW(L"ppexec.exe powershell1 <exe> <arg>\t - powershell with PPL+Antimalware protection flags\n"));
